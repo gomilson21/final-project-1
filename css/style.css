@@ -1,0 +1,49 @@
+.bg-pink {
+    background-color:  #ea03ff;
+}
+
+.bg-pink1 {
+    background-color:  rgba(234, 3, 255, 0.753);
+}
+
+.bg-viollet {
+    background-color: #8932c3;
+}
+
+.btn-outline {
+    outline: none !important;
+}
+
+.nav-link {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #f7f7f7;
+    transition: 0.4s !important;
+}
+
+#dark-light {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+i.bi-sun {
+    color: #f7f7f7;
+}
+
+i.bi-moon {
+   color: rgb(33, 37, 41);
+}
+
+/* Section Home */
+#home {
+    animation: change-bg 20s infinite /*delay iteration-count direction fill-mode*/;
+    background-image: url("../img/soft-1.jpg"); background-size: cover; background-position: center; background-repeat: no-repeat;
+}
+
+@keyframes change-bg {
+    40% { background-image: url("../img/soft-2.jpg"); }  
+    80% { background-image: url("../img/soft-3.jpg");}  
+}
