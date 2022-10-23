@@ -15,20 +15,18 @@
 }
 
 .nav-link {
-    font-size: 20px;
-    cursor: pointer;
+    font-size: 20px; cursor: pointer;
 }
 
 .nav-link:hover {
-    color: #f7f7f7;
-    transition: 0.4s !important;
+    color: #f7f7f7; transition: 0.4s !important;
 }
 
 #dark-light {
-    font-size: 22px;
-    cursor: pointer;
+    font-size: 22px; cursor: pointer;
 }
 
+/* Icons */
 i.bi-sun {
     color: #f7f7f7;
 }
@@ -37,13 +35,53 @@ i.bi-moon {
    color: rgb(33, 37, 41);
 }
 
-/* Section Home */
-#home {
-    animation: change-bg 20s infinite /*delay iteration-count direction fill-mode*/;
-    background-image: url("../img/soft-1.jpg"); background-size: cover; background-position: center; background-repeat: no-repeat;
-}
 
 @keyframes change-bg {
     40% { background-image: url("../img/soft-2.jpg"); }  
     80% { background-image: url("../img/soft-3.jpg");}  
+}
+
+.bottom {
+    z-index: 1; bottom: 5%;
+}
+
+.end { 
+    right: 5%;
+}
+
+.shadow-light {
+    box-shadow: 0 5px 8px rgba(230, 230, 230, 0.5);
+}
+
+.hr-section {
+    width: 150px; border: 3px solid #9a0478;
+}
+
+.social:hover {
+    transition: 0.5s !important; color:#6f42c1 !important;
+}
+
+input:focus {
+   box-shadow: none !important;
+}
+
+/* Carousel */
+@media (max-width: 576px) {
+    .cards-wrapper .card:not(:first-child) { display: none; }
+}
+
+@media (min-width: 576px) {
+    .cards-wrapper { display: flex; }
+    .cards-wrapper .card { width: calc(100%3); }
+}
+.cards-wrapper .card { height: 45vh;}
+
+.img-wrapper { overflow: hidden; height: 25vh;}
+
+.img-wrapper img { transition: 1.5s all ease; }
+
+.img-wrapper:hover img { transform: scale(1.5);}
+
+.carousel-control-prev,  .carousel-control-next {
+    width: 3rem; height: 3rem; top: 50%; border-radius: 50%; background-color: #6c757d; opacity: 0.4;
 }
