@@ -1,69 +1,31 @@
-.bg-pink {
-    background-color:  #ea03ff;
-}
+.bg-pink { background-color:  #ea03ff; }
 
-.bg-pink1 {
-    background-color:  rgba(234, 3, 255, 0.753);
-}
+.bg-pink1 { background-color:  rgba(234, 3, 255, 0.753); }
 
-.bg-viollet {
-    background-color: #8932c3;
-}
+.bg-viollet { background-color: #8932c3; }
 
-.btn-outline {
-    outline: none !important;
-}
+.nav-link { font-size: 20px; cursor: pointer; }
 
-.nav-link {
-    font-size: 20px; cursor: pointer;
-}
+.nav-link:hover { color: #f7f7f7; transition: 0.4s !important; }
 
-.nav-link:hover {
-    color: #f7f7f7; transition: 0.4s !important;
-}
-
-#dark-light {
-    font-size: 22px; cursor: pointer;
-}
+#dark-light { font-size: 22px; cursor: pointer; }
 
 /* Icons */
-i.bi-sun {
-    color: #f7f7f7;
-}
+i.bi-sun { color: #f7f7f7; transition: all 0.5s ease-out; }
 
-i.bi-moon {
-   color: rgb(33, 37, 41);
-}
+i.bi-moon { color: rgb(33, 37, 41); transition: all 5s ease; }
 
+.bottom { z-index: 1; bottom: 5%; }
 
-@keyframes change-bg {
-    40% { background-image: url("../img/soft-2.jpg"); }  
-    80% { background-image: url("../img/soft-3.jpg");}  
-}
+.end { right: 5%; }
 
-.bottom {
-    z-index: 1; bottom: 5%;
-}
+.shadow-light { box-shadow: 0 5px 8px rgba(230, 230, 230, 0.5); }
 
-.end { 
-    right: 5%;
-}
+.hr-section { width: 150px; border: 3px solid #9a0478; }
 
-.shadow-light {
-    box-shadow: 0 5px 8px rgba(230, 230, 230, 0.5);
-}
+.social:hover { transition: 0.5s !important; color:#6f42c1 !important; }
 
-.hr-section {
-    width: 150px; border: 3px solid #9a0478;
-}
-
-.social:hover {
-    transition: 0.5s !important; color:#6f42c1 !important;
-}
-
-input:focus {
-   box-shadow: none !important;
-}
+input:focus, textarea:focus { box-shadow: none !important; }
 
 /* Carousel */
 @media (max-width: 576px) {
@@ -72,9 +34,13 @@ input:focus {
 
 @media (min-width: 576px) {
     .cards-wrapper { display: flex; }
-    .cards-wrapper .card { width: calc(100%3); }
 }
-.cards-wrapper .card { height: 45vh;}
+
+@media (min-width: 576px) and (max-width: 768) {
+    .cards-wrapper .card:last-child { display: none;}
+
+    .cards-wrapper .card { margin-left: auto; margin-right: auto;  }
+}
 
 .img-wrapper { overflow: hidden; height: 25vh;}
 
@@ -85,3 +51,5 @@ input:focus {
 .carousel-control-prev,  .carousel-control-next {
     width: 3rem; height: 3rem; top: 50%; border-radius: 50%; background-color: #6c757d; opacity: 0.4;
 }
+
+.description-us img { border-radius: 50%; }

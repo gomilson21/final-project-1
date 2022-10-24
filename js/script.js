@@ -23,18 +23,30 @@ loadDarkMode();
 
 $("#change-mode").on("click", function() {
     if($("#change-mode").is(":checked")) {
-        $(".navbar").removeClass("navbar-light bg-light");
-        $(".navbar").addClass("navbar-dark bg-dark");
+        $("*").toggleClass("text-dark text-light");
+       
+        $(document.body).toggleClass("bg-dark bg-light");
 
-        $(".bi-sun").removeClass("d-none");
-        $(".bi-moon").addClass("d-none");
-    } else {
-        $(".navbar").removeClass("navbar-dark bg-dark");
-        $(".navbar").addClass("navbar-light bg-light");
+        $(".navbar").toggleClass("navbar-dark bg-dark shadow-light navbar-light bg-light shadow"); 
     
-        $(".bi-moon").removeClass("d-none");
-        $("bi-sun").addClass("d-none");    
-    }
+        $(".bi-moon").toggleClass("d-none");   
+        $(".bi-sun").toggleClass("d-none");
 
-    //if ($(".navbar").is(".navbar-light"))
+        $(".dropdown-menu").toggleClass("bg-dark bg-light");
+    } else { 
+        $("*").toggleClass("text-dark text-light");
+    
+        $(".navbar").toggleClass("navbar-light bg-light navbar-dark bg-dark");
+
+        $(document.body).toggleClass("bg-light bg-dark");
+
+        $(".bi-sun").toggleClass("d-none");
+        $(".bi-moon").toggleClass("d-none");
+
+        $(".dropdown-menu").toggleClass("bg-dark bg-light");
+    }
+})
+
+$(document).on("scroll", function() {
+    $(document.body).css.margin 
 })
