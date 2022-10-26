@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Code Petshop </title>
+  <link rel="icon" href="img/logo-capa/logo.ico">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-dark">
+
+  <div class="top container my-4 ">
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 30%;">
+      <button class="btn btn-outline-success me-3" type="submit">Search</button>
+
+      <a href="" class="fs-5 text-decoration-none text-primary me-3"> Sig-in</a>
+      <a href="" class="fs-5 text-decoration-none text-primary"> Sig-out </a>
+    </form>
+  </div>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark border-bottom shadow-light fixed-top"
+    aria-label="Tenth navbar example">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/logo-capa/logo.ico" alt="logo"> Code Petshop
+      </a>
+
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse justify-content-md-center collapse" id="navbarsExample08">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service.html"> Serviços </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link"> Sobre </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link"> Contacto </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Função Dark Mode -->
+      <div>
+        <input id="change-mode" type="checkbox" class="d-none">
+        <label id="dark-light" for="change-mode">
+          <i class="bi bi-moon d-none"></i>
+          <i class="bi bi-sun"></i>
+        </label>
+      </div>
+    </div>
+  </nav>
+  <br><br><br>
+
+    <!-- Sessão Serviços -->
+    <section id="services" class="container text-light">
+        <div class="row">
+    
+          <div class="title-section">
+            <h2 class="display-4 text-light text-center"> Os Nosos Serviços </h2>
+            <hr class="hr-section m-auto mt-3">
+          </div>
+    
+          <ul class="nav nav-tabs justify-content-center mt-5">
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                Alimentos </a>
+              <ul class="dropdown-menu bg-dark">
+                <li><a class="dropdown-item text-light" href="#foods-dogs"><i class="fa-solid fa-dog me-2"
+                      style="font-size: 1.5rem;"></i> Cachorros </a></li>
+                <li><a class="dropdown-item text-light" href="#foods-cats"><i class="fa-solid fa-cat me-2"
+                      style="font-size: 1.5rem;"></i> Gatos </a></li>
+                <li><a class="dropdown-item text-light" href="#foods-birds"><i class="fa-solid fa-bird me-2"
+                      style="font-size: 1.5rem;"></i> Pássaros </a></li>
+                <li><a class="dropdown-item text-light" href="#foods-fishs"><i class="fa-solid fa-fish me-2"
+                      style="font-size: 1.5rem;"></i> Peixes </a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                suprimentos </a>
+              <ul class="dropdown-menu bg-dark">
+                <li><a class="dropdown-item text-light" href="#supplement-dogs"><i class="fa-solid fa-dog me-2"
+                      style="font-size: 1.5rem;"></i> Cachorros </a></li>
+                <li><a class="dropdown-item text-light" href="#supplement-cats"><i class="fa-solid fa-cat me-2"
+                      style="font-size: 1.5rem;"></i> Gatos </a></li>
+                <li><a class="dropdown-item text-light" href="#supplement-birds"><i class="fa-solid fa-bird me-2"
+                      style="font-size: 1.5rem;"></i> Pássaros </a></li>
+                <li><a class="dropdown-item text-light" href="#supplement-fishs"><i class="fa-solid fa-fish me-2"
+                      style="font-size: 1.5rem;"></i> Peixes </a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                higiene </a>
+              <ul class="dropdown-menu bg-dark">
+                <li><a class="dropdown-item text-light" href="#hygiene-dogs"><i class="fa-solid fa-dog me-2"
+                      style="font-size: 1.5rem;"></i> Cachorros </a></li>
+                <li><a class="dropdown-item text-light" href="#hygiene-cats"><i class="fa-solid fa-cat me-2"
+                      style="font-size: 1.5rem;"></i> Gatos </a></li>
+                <li><a class="dropdown-item text-light" href="#hygiene-birds"><i class="fa-solid fa-bird me-2"
+                      style="font-size: 1.5rem;"></i> Pássaros </a></li>
+              </ul>
+            </li>
+          </ul>
+    
+          <article id="foods" class="mt-3">
+            <!-- Artigo de alimentos para Cães -->
+            <article id="foods-dogs">
+    
+              <div class="title-section mt-5">
+                <h2 class="display-6 text-light text-center"> Alimentos Para Cachorros </h2>
+              </div>
+    
+              <div class="descriptions d-flex justify-content-center">
+                <h6 class="text-light col-6 mt-3 fs-5 text-center"> A code Petshop oferece para ti uma variedade
+                  de alimentos para cachorros nas variadíssimas raças! </h6>
+              </div>
+    
+              <div id="carouselFoodsDogs" class="carousel slide text-dark" data-bs-ride="carousel">
+                <div class="carousel-inner p-3">
+                  <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-3 mx-auto">
+                        <div class="img-wrapper">
+                          <img src="img/card/dogs/foods/food-dog-1.jpg" alt="food-dog-1" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração PremieR </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/dogs/foods/food-dog-2.webp" alt="food-dog-2" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Excellence </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/dogs/foods/food-dog-3.webp" alt="food-dog-3" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Max </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/dogs/foods/food-dog-4.jpg" alt="food-dog-4" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Natural </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/dogs/foods/food-dog-5.webp" alt="food-dog-5" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Equilíbrio </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/dogs/foods/food-dog-6.png" alt="food-dog-6" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Champ </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/dogs/foods/food-dog-7.webp" alt="food-dog-7" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração GoldeN </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/dogs/foods/food-dog-8.jpg" alt="food-dog-8" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Quatree </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/dogs/foods/food-dog-9.png" alt="food-dog-9" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Advence </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselFoodsDogs"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselFoodsDogs"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </article>
+    
+            <!-- Artigo de alimentos para Gatos -->
+            <article id="foods-cats" class="mt-4">
+    
+              <div class="title-section mt-5">
+                <h2 class="display-6 text-light text-center"> Alimentos para Gatos </h2>
+              </div>
+    
+              <div class="descriptions d-flex justify-content-center">
+                <h6 class="text-light col-6 mt-3 fs-5 text-center"> A code Petshop oferece para ti uma variedade
+                  de alimentos para gatos nas variadíssimas raças! </h6>
+              </div>
+    
+              <!-- Carousel do topo da página -->
+              <div id="carouselFoodsCats" class="carousel slide text-dark" data-bs-ride="carousel">
+                <div class="carousel-inner p-3">
+                  <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/cats/foods/food-cat-1.jpg" alt="food-cat-1" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Magnus </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/cats/foods/food-cat-2.webp" alt="food-cat-2" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Origens </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/cats/foods/food-cat-3.webp" alt="food-cat-3" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração GoldeN </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/cats/foods/food-cat-4.jpg" alt="food-cat-4" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração PremieR </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/cats/foods/food-cat-5.webp" alt="food-cat-5" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Whiskas </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/cats/foods/food-cat-6.webp" alt="food-cat-6" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Equilíbrio </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/cats/foods/food-cat-7.jpg" alt="food-cat-7" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração StreetCat </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/cats/foods/food-cat-8.webp" alt="food-cat-8" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Mimo </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/cats/foods/food-cat-9.webp" alt="food-cat-9" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração NeroCat </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselFoodsCats"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselFoodsCats"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+    
+            </article>
+    
+            <!-- Artigo de alimentos para Pássaros -->
+            <article id="foods-birds" class="mt-4">
+    
+              <div class="title-section mt-5">
+                <h2 class="display-6 text-light text-center"> Alimentos para Pássaros </h2>
+              </div>
+    
+              <div class="descriptions d-flex justify-content-center">
+                <h6 class="text-light col-6 mt-3 fs-5 text-center"> A code Petshop oferece para ti uma variedade
+                  de alimentos para pássaros nas variadíssimas raças! </h6>
+              </div>
+    
+              <!-- Carousel do topo da página -->
+              <div id="carouselFoodsBirds" class="carousel slide text-dark" data-bs-ride="carousel">
+                <div class="carousel-inner p-3">
+                  <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/birds/foods/food-bird-1.jpg" alt="food-bird-1" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Calopsita </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/birds/foods/food-bird-2.jpg" alt="..." class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Cantoninho </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/birds/foods/food-bird-3.jpg" alt="food-bird-3" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Nutral </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/birds/foods/food-bird-4.jpg" alt="food-bird-4" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração MegaZOO </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/birds/foods/food-bird-5.jpg" alt="food-bird-5" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Nutrópica </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/birds/foods/food-bird-6.jpg" alt="food-bird-6" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Real Bird </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselFoodsBirds"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselFoodsBirds"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </article>
+    
+            <!-- Artigo de alimentos para Peixes -->
+            <article id="foods-fishs" class="mt-4">
+    
+              <div class="title-section mt-5">
+                <h2 class="display-6 text-light text-center"> Alimentos para Peixes </h2>
+              </div>
+    
+              <div class="descriptions d-flex justify-content-center">
+                <h6 class="text-light col-6 mt-3 fs-5 text-center"> A code Petshop oferece para ti uma variedade
+                  de alimentos para peixes nas variadíssimas raças! </h6>
+              </div>
+    
+              <!-- Carousel do topo da página -->
+              <div id="carouselFoodsFishs" class="carousel slide text-dark" data-bs-ride="carousel">
+                <div class="carousel-inner p-3">
+                  <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/fishs/foods/food-fish-1.webp" alt="food-fish-1" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Gaânulos </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/fishs/foods/food-fish-2.jpg" alt="food-fish-2" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Nutribetta </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/fishs/foods/food-fish-3.jpg" alt="food-bird-3" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Basic </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/fishs/foods/food-fish-4.jpeg" alt="food-fish-4" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Peixes </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/fishs/foods/food-fish-5.webp" alt="food-fish-5" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Carnívoros </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/fishs/foods/food-fish-6.webp" alt="food-fish-6" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Ração Carpa </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselFoodsFishs"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselFoodsFishs"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </article>
+          </article>
+    
+          <article id="supplements" class="mt-3">
+            
+            <!-- Artigo de Suplementos para Cachorros -->
+            <article id="supplement-dogs">
+              <div class="title-section mt-5">
+                <h2 class="display-6 text-light text-center"> Suplementos para Cachorros </h2>
+              </div>
+    
+              <div class="descriptions d-flex justify-content-center">
+                <h6 class="text-light col-6 mt-3 fs-5 text-center"> A code Petshop preocupa-se com a estatura física do seu 
+                  Cachorro por isso oferecemos para Ele uma diversidade de suprimentos para todas as raças e idades! </h6>
+              </div>
+    
+              <!-- Carousel do topo da página -->
+              <div id="carouselSupplementDogs" class="carousel slide text-dark" data-bs-ride="carousel">
+                <div class="carousel-inner p-3">
+                  <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/dogs/supplements/supplement-dog-1.jpg" alt="supplement-dog-1" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> CoproX </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo fs-6"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/dogs/supplements/supplement-dog-2.webp" alt="supplement-dog-2" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Organnact PET </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo fs-6"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/dogs/supplements/supplement-dog-3.webp" alt="supplement-dog-3" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center text-uppercase"> QueraNon </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/dogs/supplements/supplement-dog-4.jpg" alt="hygiene-dog-4" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Organnect Omega </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/dogs/supplements/supplement-dog-5.jpg" alt="supplement-dog-5" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> CondroPlex Stick's </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/dogs/supplements/supplement-dog-6.jpg" alt="supplement-dog-6" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Flexandin </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselSupplementDogs"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselSupplementDogs"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </article>
+    
+            <!-- Artigo de Suplememtos para Gatos -->
+            <article id="supplement-cats">
+              <div class="title-section mt-5">
+                <h2 class="display-6 text-light text-center"> Suplementos para Gatos </h2>
+              </div>
+    
+              <div class="descriptions d-flex justify-content-center">
+                <h6 class="text-light col-6 mt-3 fs-5 text-center"> A code Petshop preocupa-se com a estatura física do seu 
+                  Gatos por isso oferecemos para Ele uma diversidade de suprimentos para todas as raças e idades! </h6>
+              </div>
+    
+              <!-- Carousel do topo da página -->
+              <div id="carouselHygieneCats" class="carousel slide text-dark" data-bs-ride="carousel">
+                <div class="carousel-inner p-3">
+                  <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/cats/supplements/supplement-cat-1.webp" alt="supplement-cat-1" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> NUTRIFULL </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/cats/supplements/supplement-cat-2.jpg" alt="supplement-cat-2" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Super Gatos </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/cats/supplements/supplement-cat-3.jpeg" alt="supplement-cat-3" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> PRO PLAN </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/cats/supplements/supplement-cat-4.webp" alt="supplement-cat-4" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Nutro plus </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/cats/supplements/supplement-cat-5.png" alt="supplement-cat-5" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> NO STRESS </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/cats/supplements/supplement-cat-6.jpg" alt="supplement-cat-6" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> RenAvast </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHygieneCats"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHygieneCats"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </article>
+    
+            <!-- Artigo de Suplementos para Pássaros -->
+            <article id="supplement-birds">
+              <div class="title-section mt-5">
+                <h2 class="display-6 text-light text-center"> Suplementos para Pássaros </h2>
+              </div>
+    
+              <div class="descriptions d-flex justify-content-center">
+                <h6 class="text-light col-6 mt-3 fs-5 text-center"> A code Petshop preocupa-se com a estatura física do seu 
+                  Pássaros por isso oferecemos para Ele uma diversidade de suprimentos para todas as raças e idades! </h6>
+              </div>
+    
+              <!-- Carousel do topo da página -->
+              <div id="carouselHygieneBirds" class="carousel slide text-dark" data-bs-ride="carousel">
+                <div class="carousel-inner p-3">
+                  <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/birds/supplements/supplement-bird-1.webp" alt="supplememt-bird-1" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Avicil </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/birds/supplements/supplement-bird-2.jpg" alt="supplement-bird-2" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center fs-6 text-uppercase">  Avevit </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/birds/supplements/supplement-bird-3.webp" alt="supplement-bird-3" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Biotrin </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/birds/supplements/supplement-bird-4.webp" alt="supplement-bird-4" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Labcon Club </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/birds/supplements/supplement-bird-5.jpg" alt="supplement-bird-5" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Avesil </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/birds/supplements/supplement-bird-6.jpg" alt="supplement-bird-6" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Hidrovit </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHygieneBirds"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHygieneBirds"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </article>
+    
+            <!-- Artigo de Suplementos para Peixes -->
+            <article id="supplement-fishs">
+              <div class="title-section mt-5">
+                <h2 class="display-6 text-light text-center"> Suplementos para Peixes </h2>
+              </div>
+    
+              <div class="descriptions d-flex justify-content-center">
+                <h6 class="text-light col-6 mt-3 fs-5 text-center"> A code Petshop preocupa-se com a estatura física do seu 
+                  peixes por isso oferecemos para Ele uma diversidade de suprimentos para todas as espécies e idades! </h6>
+              </div>
+    
+              <!-- Carousel do topo da página -->
+              <div id="carouselSupplementFishs" class="carousel slide text-dark" data-bs-ride="carousel">
+                <div class="carousel-inner p-3">
+                  <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/fishs/supplements/supplement-fish-1.webp" alt="supplement-fish-1" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> ORPHIC </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo fs-6"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/fishs/supplements/supplement-fish-2.webp" alt="supplement-fish-2" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Growth </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo fs-6"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/fishs/supplements/supplement-fish-3.jpg" alt="supplement-fish-3" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center text-uppercase"> Mega DHA </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/fishs/supplements/supplement-fish-4.jpg" alt="sypplement-fish-4" class="mx-auto w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> BioVittare </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/fishs/supplements/supplement-fish-5.webp" alt="supplement-fish-5" class="card-img-top h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> CondroPlex Stick's </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/fishs/supplements/supplement-fish-6.jpg" alt="supplement-fish-6" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Nature Mode </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselSupplementFishs"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselSupplementFishs"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </article>
+          </article>
+    
+          <article id="hygiene" class="mt-3">
+            
+            <!-- Artigo de Higiene para Cachorros -->
+            <article id="hygiene-dogs">
+              <div class="title-section mt-5">
+                <h2 class="display-6 text-light text-center"> Produtos de Higiene Para Cachorros </h2>
+              </div>
+    
+              <div class="descriptions d-flex justify-content-center">
+                <h6 class="text-light col-6 mt-3 fs-5 text-center"> A code Petshop preocupa-se com a higiene do seu Cachorro
+                  por isso oferecemos para ti uma vasta gama de produtos para todas as raças e idade! </h6>
+              </div>
+    
+              <div id="carouselHygieneDogs" class="carousel slide text-dark" data-bs-ride="carousel">
+                <div class="carousel-inner p-3">
+                  <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/dogs/hygiene/hygiene-dog-1.webp" alt="hygiene-dog-1" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Sanol </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/dogs/hygiene/hygiene-dog-2.webp" alt="hygiene-dog-2" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Pró Canine </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/dogs/hygiene/hygiene-dog-3.webp" alt="hygiene-dog-3" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Waschbare Windel </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/dogs/hygiene/hygiene-dog-4.jpg" alt="hygiene-dog-4" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Adaptil </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/dogs/hygiene/hygiene-dog-5.webp" alt="hygiene-dog-5" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Kit Pró Canine </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/dogs/hygiene/hygiene-dog-6.webp" alt="hygiene-dog-6" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Dog's Care </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHygieneDogs"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHygieneDogs"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </article>
+    
+            <!-- Artigo de Higiene para Gatos -->
+            <article id="hygiene-cats">
+              <div class="title-section mt-5">
+                <h2 class="display-6 text-light text-center"> Produtos de Higiene Para Gatos </h2>
+              </div>
+    
+              <div class="descriptions d-flex justify-content-center">
+                <h6 class="text-light col-6 mt-3 fs-5 text-center"> A code Petshop preocupa-se com a higiene do seu Gato
+                  por isso oferecemos para Ele uma vasta gama de produtos para todas as raças e idade! </h6>
+              </div>
+    
+              <div id="carouselHygieneCats" class="carousel slide text-dark" data-bs-ride="carousel">
+                <div class="carousel-inner p-3">
+                  <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/cats/hygiene/hygiene-cat-1.jpg" alt="hygiene-cat-1" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Nova clean </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/cats/hygiene/hygiene-cat--2.webp" alt="hygiene-cat-2" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Kit Genial Pet </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/cats/hygiene/hygiene-cat-3.jpg" alt="hygiene-cat-3" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Advocate </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/cats/hygiene/hygiene-cat-4.webp" alt="hygiene-cat-4" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> The Cats </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/cats/hygiene/hygiene-cat-5.jpg" alt="hygiene-cat-5" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Dental Life </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/cats/hygiene/hygiene-cat-6.jpg" alt="hygiene-cat-6" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center text-uppercase"> Kit Pipicat </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHygieneCats"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHygieneCats"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </article>
+    
+            <!-- Artigo de Higiene para Pássaros -->
+            <article id="hygiene-birds">
+              <div class="title-section mt-5">
+                <h2 class="display-6 text-light text-center"> Produtos de Higiene Para Pássaros </h2>
+              </div>
+    
+              <div class="descriptions d-flex justify-content-center">
+                <h6 class="text-light col-6 mt-3 fs-5 text-center"> A code Petshop preocupa-se com a higiene do seu Pássaro
+                  por isso oferecemos para Ele uma vasta gama de produtos para todas as raças e idade! </h6>
+              </div>
+    
+              <div id="carouselHygieneBirds" class="carousel slide text-dark" data-bs-ride="carousel">
+                <div class="carousel-inner p-3">
+                  <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/birds/hygiene/hygiene-bird-1.jpg" alt="hygiene-bird-1" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center text-uppercase"> Allax </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/birds/hygiene/hygiene-bird-2.jpg" alt="hygiene-bird-2" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center fs-6 text-uppercase"> Shamphoo Azzurro </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/birds/hygiene/hygiene-bird-3.jpg" alt="hygiene-bird-3" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> KIT LAVISZOON </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/birds/hygiene/hygiene-bird-4.jpg" alt="hygiene-bird-4" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Alcon </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/birds/hygiene/hygiene-bird-5.jpg" alt="hygiene-bird-5" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center"> Pet Plumas </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                      <div class="card p-3 me-4">
+                        <div class="img-wrapper">
+                          <img src="img/card/birds/hygiene/whygiene-bird-6.webp" alt="hygiene-bird-6" class="w-100 h-100">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center text-uppercase"> CarePet </h5>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content. </p>
+                          <a href="#" class="btn btn-outline-logo"> Saber mais... </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHygieneBirds"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHygieneBirds"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </article>
+          </article>
+        </div>
+      </section>
+
+   <!-- Botão fixo de Media Social  -->
+   <div class="position-relative">
+    <div class="position-fixed bottom end d-flex flex-column">
+      <a class="btn" href="https://www.facebook.com/gomilson.otenta" target="_blank"><i class="bi bi-facebook fs-2 social"></i> </a>
+      <a class="btn" href="#" target="_blank"><i class="bi bi-twitter fs-2 social"></i></a>
+      <a class="btn" href="https://twitter.com/gomilson_otenta" target="_blank"><i
+          class="bi bi-instagram fs-2 social"></i></a>
+      <a class="btn" href="https://github.com/gomilson21" target="_blank"><i
+          class="bi bi-github fs-2 social"></i></a>
+    </div>
+  </div>
+
+
+
+  <!-- Rodapé -->
+  <footer class="border-top mt-5">
+    <div class="container">
+      <div class="row justify-content-sm-center">
+        <div class="col-sm-12 col-md-6">
+          <a href="index.html" class="text-light display-6 text-decoration-none">
+            <img src="img/logo-capa/logo.ico" alt="logo">
+            Code Petshop
+          </a>
+          <ul class="text-light mt-3">
+            <li> Na code Petshop o seu pet prioridade.</li>
+            <li> Na code Petshop o seu pet é nossa responsabilidade. </li>
+            <li> Na Code Petshop o seu pet é nosso bem mais precioso. </li>
+          </ul>
+        </div>
+
+        <div class="col-sm-12 col-md-6 mt-3 text-center">
+            <br><br>
+            <h5 class="fs-6"><a href="https://www.unitel.ao" class="text-decoration-none link-light"> Unitel
+                    Angola </a></h5>
+            <h5 class="fs-6"><a href="https://www.unitel.ao" class="text-decoration-none link-light"> Buka </a></h5>
+            <h5 class="fs-6 text-secondary">&copy; 2022 - Gomilson Otenta </h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Arquivos JavaScript -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script-boot.js"></script>
+  <script src="js/font-awesome/all.min.js"></script>
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

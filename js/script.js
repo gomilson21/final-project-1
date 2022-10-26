@@ -4,27 +4,11 @@ $(".nav-item a").on("click", function() {
     $(this).addClass("active")
 })
 
-// Load light or dark mode
-function loadDarkMode() {
-    if(localStorage.getItem('dark'))
-        toggleDarkMode()
-}
-
-
-  //  toggleDarkMode()
-    
-    // Save or remove dark mode
-    localStorage.removeItem('dark')
-
-    if(document.body.classList.contains('dark'))
-        localStorage.setItem('dark', 1)
-
-loadDarkMode();
-
-$("#change-mode").on("click", function() {
+ //  toggleDarkMode()
+function toggleDarkMode () {
     if($("#change-mode").is(":checked")) {
         $("*").toggleClass("text-dark text-light");
-       
+    
         $(document.body).toggleClass("bg-dark bg-light");
 
         $(".navbar").toggleClass("navbar-dark bg-dark shadow-light navbar-light bg-light shadow"); 
@@ -33,6 +17,8 @@ $("#change-mode").on("click", function() {
         $(".bi-sun").toggleClass("d-none");
 
         $(".dropdown-menu").toggleClass("bg-dark bg-light");
+
+        $(".card").toggleClass("shadow-light shadow-dark");
     } else { 
         $("*").toggleClass("text-dark text-light");
     
@@ -44,8 +30,28 @@ $("#change-mode").on("click", function() {
         $(".bi-moon").toggleClass("d-none");
 
         $(".dropdown-menu").toggleClass("bg-dark bg-light");
+
+        $(".card").toggleClass("shadow-light shadow-dark");
     }
+}
+
+$("#change-mode").on("click", function() {
+    toggleDarkMode();
+
+    // Save or remove dark mode
+    localStorage.removeItem('dark'); 
+
+    if($("body").is('.bg-dark'))
+        localStorage.setItem('dark', 1)
 })
+    
+// Load light or dark mode
+function loadDarkMode() {
+    if(localStorage.getItem('dark'))
+        toggleDarkMode()
+}
+
+loadDarkMode();
 
 $(document).on("scroll", function() {
     $(document.body).css.margin 
