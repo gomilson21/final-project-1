@@ -19,7 +19,7 @@ i.bi-moon { color: rgb(33, 37, 41); transition: all 5s ease; }
 
 .end { right: 5%; }
 
-.shadow-light { box-shadow: 0 3px 8px rgb(245, 245, 245, 0.8); }
+.shadow-light { box-shadow: 0 3px 8px rgba(245, 245, 245, 0.8); }
 
 .shadow-dark { box-shadow: 0 3px 8px  rgba(33, 37, 41, 0.6); }
 
@@ -68,14 +68,16 @@ input:focus, textarea:focus { box-shadow: none !important; }
 
 /* Botão */
 .btn-outline-logo { border: 2px solid #9a0478; padding: 5px; font-size: 1.2rem; border-radius: 8px; }
-.btn-outline-logo:hover { background-color: #9a0478; transition: 0.4s;}
+.btn-outline-logo:hover { background-color: rgb(154, 4, 120); transition: 0.4s; color: white; opacity: 0.9; }
 
 .description-home img { transition: 0.3s all;}
 .description-home img:hover { transform: scale(1.05);}
 
-.description-home p, .description-news { text-align: justify;}
+.description-home p, .description-news { text-align: justify; }
 
 .description-us p { text-align: justify;}
 /* cards da área de contacto "testemunhos" */
 #testimony .card { transition: 1.2s all; }
 #testimony .card:hover { transform: scale(1.2); cursor: pointer;}
+
+#news .card:hover { border: 1px solid #9a0478; transition: 0.3s; }

@@ -32,17 +32,17 @@ function toggleDarkMode () {
         $(".dropdown-menu").toggleClass("bg-dark bg-light");
 
         $(".card").toggleClass("shadow-light shadow-dark");
-    }
+    }  
 }
 
-$("#change-mode").on("click", function() {
+$("#change-mode").click(function() {
     toggleDarkMode();
 
     // Save or remove dark mode
     localStorage.removeItem('dark'); 
 
     if($("body").is('.bg-dark'))
-        localStorage.setItem('dark', 1)
+        localStorage.setItem('dark', 1);
 })
     
 // Load light or dark mode
@@ -51,8 +51,14 @@ function loadDarkMode() {
         toggleDarkMode()
 }
 
-loadDarkMode();
+$(document).ready(function() {
+    loadDarkMode();
+})
 
-$(document).on("scroll", function() {
-    $(document.body).css.margin 
+
+$(document).scroll(function() {
+    if(window.scrollY > 80)
+        $(".navbar").addClass("fixed-top");
+    else
+        $(".navbar").removeClass("fixed-top");
 })
