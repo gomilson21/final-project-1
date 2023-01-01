@@ -67,7 +67,7 @@ input:focus, textarea:focus { box-shadow: none !important; }
 
 
 /* Botão */
-.btn-outline-logo { border: 2px solid #9a0478; padding: 5px; font-size: 1.2rem; border-radius: 8px; }
+.btn-outline-logo { border: 2px solid #9a0478; padding: 5px; font-size: 1.2rem; border-radius: 10px; }
 .btn-outline-logo:hover { background-color: rgb(154, 4, 120); transition: 0.4s; color: white; opacity: 0.9; }
 
 .description-home img { transition: 0.3s all;}

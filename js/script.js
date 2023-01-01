@@ -21,10 +21,11 @@ function toggleDarkMode () {
         $(".card").toggleClass("shadow-light shadow-dark");
     } else { 
         $("*").toggleClass("text-dark text-light");
-    
+     
+     	$(document.body).toggleClass("bg-dark bg-light");
+     
         $(".navbar").toggleClass("navbar-light bg-light navbar-dark bg-dark");
-
-        $(document.body).toggleClass("bg-light bg-dark");
+  
 
         $(".bi-sun").toggleClass("d-none");
         $(".bi-moon").toggleClass("d-none");
@@ -37,23 +38,25 @@ function toggleDarkMode () {
 
 $("#change-mode").click(function() {
     toggleDarkMode();
+    
 
-    // Save or remove dark mode
-    localStorage.removeItem('dark'); 
-
-    if($("body").is('.bg-dark'))
+    
+    if(!$("body").is('.bg-dark'))
         localStorage.setItem('dark', 1);
+    else 
+    // Remove dark mode
+	 localStorage.removeItem('dark'); 
 })
     
 // Load light or dark mode
 function loadDarkMode() {
     if(localStorage.getItem('dark'))
-        toggleDarkMode()
+        toggleDarkMode();
 }
 
 $(document).ready(function() {
     loadDarkMode();
-})
+});
 
 
 $(document).scroll(function() {
@@ -61,4 +64,5 @@ $(document).scroll(function() {
         $(".navbar").addClass("fixed-top");
     else
         $(".navbar").removeClass("fixed-top");
-})
+});
+
